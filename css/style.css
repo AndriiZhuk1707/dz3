@@ -430,7 +430,7 @@ address{
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.foto-portfilio{ display: block;}
+.foto { display: block;}
 
 
 .list-portfolio-icon:nth-child(3n) {
