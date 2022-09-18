@@ -27,6 +27,14 @@
     box-sizing: border-box;
 }
 
+.a,p,li,ul,h1,h2,h3 {
+
+   margin: 0;
+   padding: 0;
+}
+
+
+
 .a { margin: 0;
     text-decoration: none;}
 
@@ -52,6 +60,7 @@
     height: 80px;
     align-items: center;
     display: flex;
+    
 }
 
 .Logo {
@@ -73,6 +82,7 @@
 .header-list {
     padding-inline-start: 0px;
     display: flex;
+    list-style-type: none;
 }
 
 .header-list.link.active.current{
@@ -431,7 +441,7 @@ color:var(--about-text-color)
     width: 370px;
     padding: 20px 24px 20px 24px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+   
 }
 
 .title-galety {
