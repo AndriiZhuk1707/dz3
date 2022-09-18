@@ -32,9 +32,6 @@ a,p,li,ul,h1,h2,h3,button {
    padding: 0;
 }
 
-*{
-    outline: 1px solid red;
-} 
 
 a { margin: 0;
     text-decoration: none;}
