@@ -27,9 +27,10 @@ body {
     box-sizing: border-box;
 }
 
-a,p,li,ul,h1,h2,h3,button {
+a,p,li,ul,h1,h2,h3,h4,h5,h6,button {
    
    padding: 0;
+   margin: 0;
 }
 
 
@@ -45,6 +46,9 @@ address{
     list-style-type:none;
     text-decoration: none;}
 
+.list {margin: 0px;
+    list-style-type: none;
+    }
 
 .conteiner {
     margin: 0 auto;
@@ -220,6 +224,10 @@ address{
     display: flex;
 }
 
+.about-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .about-title {
     position: absolute;
     white-space: nowrap;
@@ -233,13 +241,7 @@ address{
     margin: -1px;
 }
 
-.about-list-item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .advantage-title {
-    margin: 12px;
-    margin-left: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -249,7 +251,7 @@ address{
 }
 
 .advantage-text {
-   padding-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.7;
     color: var(--about-text-color)
@@ -259,7 +261,7 @@ address{
        /*Whot work*/
 
 .conteiner-work {
-     padding: 0px 0px 93px 0px;
+     padding: 93px 0px 93px 0px;
     }
 
 .develops-list {
@@ -272,31 +274,41 @@ address{
 
 .work-list-item:not(:last-child) {
     margin-right: 30px;
+
+    }
+
+.foto { display: block;
     }
 
 .develops { 
-    padding-top: 93px;
-    padding-bottom: 50px;
-    margin: 0;
+    margin: 0 0 50px 0;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.16;
     text-align: center;
 }
 
        /*Our team*/
 
 .conteiner-team {
-    background: #F5F4FA
-    }
+    background-color:#F5F4FA;
+}
+.conteiner-team-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .team-list {
+    padding-inline-start: 0px;
     display: flex;
-     margin: 0;
-    padding: 0 0 94px 0;
+    margin: 0;
     }
 
-.team-list-icon { background: #FFFFFF;
+.team-our-name{ padding-bottom: 30px}
+
+
+.team-list-icon {
+    background: #FFFFFF;
     box-shadow: 
 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -307,14 +319,12 @@ address{
 }
 
 .section-team {
-    padding-top: 94px;
-    padding-bottom: 50px;
-    margin: 0;
+
+    margin: 0 0 50px 0;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team-title-name {
@@ -327,7 +337,6 @@ address{
 }
 
 .team-position {
-    padding-bottom: 30px;
     margin: 0;
     font-size: 16px;
     line-height: 1.2;
@@ -337,14 +346,14 @@ address{
 
 
 .footer {
-    height: 252px;
+   
     background: #2F303A
 }
 
 .conteiner-footer {
     background-color: #2F303A;
     padding-top: 60px;
-    
+    padding-bottom: 60px;
 }
 
 .logo-wraper {
@@ -354,7 +363,7 @@ address{
 .address-list-list{
     list-style-type: none;
     margin: 0px;
-        padding: 0;
+    padding: 0;
 }
 
 .list {
@@ -398,10 +407,10 @@ address{
 
 
 .section-list {
+    margin-bottom: 50px;
     padding-inline-start: 0px;
     display: flex;
     justify-content: center;
-    margin: 0px;
 }
 
 
@@ -436,9 +445,11 @@ address{
 
 .portfolio-icon-text {
  
-    padding: 22px 24px 22px 24px;
+    padding: 20px 24px 20px 24px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 
@@ -459,8 +470,6 @@ address{
 .list{list-style-type:none
    
 }
-.header-list .link.active.currents{ color:var(--accent-color) }
-
 
 .btn-section:not(:last-child) {
     margin-right: 8px;
@@ -469,7 +478,6 @@ address{
 
 .btn-section {
 
-    margin-bottom: 50px;
     padding: 6px 22px 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -496,20 +504,19 @@ address{
 }
 
 .section-title {
-margin-bottom: 10px;
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color)
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
 
 }
 
 .section-text {
-margin-top: 10px;
-font-size: 16px;
-line-height: 2;
-color:var(--about-text-color)
+    font-size: 16px;
+    line-height: 1.9;
+    color:var(--about-text-color)
 }
 
 
