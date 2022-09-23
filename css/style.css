@@ -28,7 +28,6 @@ body {
 }
 
 a,p,li,ul,h1,h2,h3,h4,h5,h6,button {
-   
    padding: 0;
    margin: 0;
 }
@@ -37,17 +36,15 @@ a,p,li,ul,h1,h2,h3,h4,h5,h6,button {
 a { margin: 0;
     text-decoration: none;}
 
-.img { display: block;
-    max-width: 100%;
-    height: auto}
+img { display: block;
+  }
 
 
 address{
     list-style-type:none;
     text-decoration: none;}
 
-.list {margin: 0px;
-    list-style-type: none;
+.list { list-style-type: none;
     }
 
 .conteiner {
@@ -192,8 +189,8 @@ address{
 }
 
 .btn-order {
-    margin-top: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+   margin-top: 30px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
    font-family: 'Roboto', sans-serif;
    background-color: var(--focus-text-color);
    font-weight: 700;
@@ -209,6 +206,7 @@ address{
 
 
    /*Section About*/
+
 .about {
     background-color:var(--other-text-color)
 }
@@ -241,17 +239,18 @@ address{
     margin: -1px;
 }
 
-.advantage-title {
+.advantage-title { 
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;   
+    text-transform: uppercase;  
 }
 
 .advantage-text {
-
+    margin-top: 10 px;
     font-size: 14px;
     line-height: 1.7;
     color: var(--about-text-color)
@@ -260,10 +259,10 @@ address{
 
        /*Whot work*/
 
-.conteiner-work {
-     padding: 93px 0px 93px 0px;
-    }
-
+.section {
+    padding: 93px 0px 93px 0px;
+}
+    
 .develops-list {
     padding: 0px;
     display: flex;
@@ -275,9 +274,6 @@ address{
 .work-list-item:not(:last-child) {
     margin-right: 30px;
 
-    }
-
-.foto { display: block;
     }
 
 .develops { 
@@ -304,7 +300,12 @@ address{
     margin: 0;
     }
 
-.team-our-name{ padding-bottom: 30px}
+.team-our-name{
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10 px;
+}
 
 
 .team-list-icon {
@@ -347,13 +348,14 @@ address{
 
 .footer {
    
-    background: #2F303A
-}
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}  
 
 .conteiner-footer {
     background-color: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
+   
 }
 
 .logo-wraper {
@@ -426,7 +428,7 @@ address{
 }
 
 
-.img{
+img{
     max-width: 100%;
     height: auto}
 
@@ -436,7 +438,6 @@ address{
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.foto { display: block;}
 
 
 .list-portfolio-icon:nth-child(3n) {
